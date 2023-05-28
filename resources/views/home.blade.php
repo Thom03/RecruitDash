@@ -50,7 +50,7 @@
                         <td>
 
 {{--                            <button class="btn btn-danger">Delete</button>--}}
-                            <a action="{{ route('delete_recruitdata', ['id' => $recruitdata->id]) }}" method="POST">
+                            <form action="{{ route('delete_recruitdata', ['id' => $recruitdata->id]) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-danger" type="submit">Delete</button>

@@ -22,31 +22,42 @@
                             <div class="col-lg-6 mb-2">
                                 <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Position Name') }}</label>
 
-                                    <input id="position_name" type="text" class="form-control @error('position_name') is-invalid @enderror" name="position_name" value="{{ old('position_name') }}"  autocomplete="position_name" autofocus>
+                                    <input id="position_name" type="text" class="form-control @error('position_name') is-invalid @enderror" name="position_name" placeholder="Position Name" value="{{ old('position_name') }}"  autocomplete="position_name" autofocus>
 
                             </div>
+{{--                                <div class="col-lg-6 mb-2">--}}
+{{--                                <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Region') }}</label>--}}
+
+{{--                                    <input id="region" type="text" class="form-control @error('region') is-invalid @enderror" name="region" value="{{ old('region') }}" placeholder="Region" autocomplete="region" autofocus>--}}
+
+{{--                            </div>--}}
+
                                 <div class="col-lg-6 mb-2">
-                                <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Region') }}</label>
+                                    <label for="region" class="col-md-4 col-form-label text-md-end">{{ __('Region') }}</label>
+                                    <select id="region" class="form-control @error('region') is-invalid @enderror" name="region">
+{{--                                        <option value="">Select Region</option>--}}
+                                        <option value="Africa">Africa</option>
+                                        <option value="Americas">Americas</option>
+                                        <option value="Europe">Europe</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </div>
 
-                                    <input id="region" type="text" class="form-control @error('region') is-invalid @enderror" name="region" value="{{ old('region') }}"  autocomplete="region" autofocus>
-
-                            </div>
                                 <div class="col-lg-6 mb-2">
                                 <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Lever') }}</label>
 
-                                    <input id="lever" type="text" class="form-control @error('lever') is-invalid @enderror" name="lever" value="{{ old('lever') }}"  autocomplete="lever" autofocus>
+                                    <input id="lever" type="text" class="form-control @error('lever') is-invalid @enderror" name="lever" value="{{ old('lever') }}"  placeholder="Lever" autocomplete="lever" autofocus>
 
                             </div>
                                 <div class="col-lg-6 mb-2">
                                 <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Duty Station') }}</label>
-
-                                    <input id="duty_station" type="text" class="form-control @error('duty_station') is-invalid @enderror" name="duty_station" value="{{ old('duty_station') }}"  autocomplete="duty_station" autofocus>
+                                    <input id="duty_station" type="text" class="form-control @error('duty_station') is-invalid @enderror" name="duty_station" value="{{ old('duty_station') }}" placeholder="Duty Station"  autocomplete="duty_station" autofocus>
 
                             </div>
                                 <div class="col-lg-6 mb-2">
                                 <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Position Level') }}</label>
 
-                                    <input id="position_level" type="text" class="form-control @error('position_level') is-invalid @enderror" name="position_level" value="{{ old('position_level') }}"  autocomplete="position_level" autofocus>
+                                    <input id="position_level" type="text" class="form-control @error('position_level') is-invalid @enderror" name="position_level" value="{{ old('position_level') }}" placeholder="Position Level"  autocomplete="position_level" autofocus>
 
                             </div>
                                 <div class="col-lg-6 mb-2">
